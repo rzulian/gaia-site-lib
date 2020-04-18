@@ -1,0 +1,12 @@
+{
+  "name": "@gaia-project/site-lib",
+  "devDependencies": {
+    "typescript": "^3.8.3"
+  },
+  "version": "1.0.0",
+  "description": "Common things between front & back",
+  "main": "index.ts",
+  "repository": "https://github.com/donkey-tech/gaia-site-lib",
+  "author": "coyotte508 <coyotte508@gmail.com>",
+  "license": "MIT"
+}
