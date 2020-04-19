@@ -12,7 +12,7 @@ export interface IAbstractUser {
         delay: number,
         /** Are email notifications enabled? */
         activated: boolean
-      } 
+      }
     },
     game: {
       noFactionFill: boolean,
@@ -26,6 +26,7 @@ export interface IAbstractUser {
       ip: string,
       date: Date
     },
+    lastActive: Date,
     confirmed: boolean,
     confirmKey: string,
     reset: {
