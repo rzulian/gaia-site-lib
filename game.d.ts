@@ -33,7 +33,7 @@ export interface IAbstractGame<T= string, Game = any, GameOptions = any> {
 
   game: {
     name: string, // e.g. "gaia-project"
-    version: string; // e.g. "1.0.0"
+    version: number; // e.g. 1
     expansions: string[], // e.g. ["spaceships"]
 
     options: GameOptions
