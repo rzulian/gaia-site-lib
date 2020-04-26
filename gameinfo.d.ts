@@ -24,14 +24,17 @@ export interface GameInfo {
   // [2, 3, 4]
   players: number[],
 
-  // [{label: "Last player rotates sectors before faction selection", name: "advancedRules", type: 'checkbox'}]
+  // [{label: "Last player <i>rotates</i> sectors before faction selection", name: "advancedRules", type: 'checkbox'}]
   options: Array<{
     label: string,
     type: 'checkbox',
     name: string
   }>,
   // ['spaceships']
-  expansions: string[],
+  expansions: Array<{
+    label: string,
+    name: string
+  }>,
 
   meta: {
     public: boolean
