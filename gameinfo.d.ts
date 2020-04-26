@@ -4,6 +4,8 @@ export interface GameInfo {
     version: number
   },
 
+  label: string,
+
   viewer: {
     // https://unpkg.com/@gaia-project/viewer@^4
     url: string,
