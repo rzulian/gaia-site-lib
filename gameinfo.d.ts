@@ -6,6 +6,9 @@ export interface GameInfo {
 
   label: string,
 
+  description: string,
+  rules: string,
+
   viewer: {
     // https://unpkg.com/@gaia-project/viewer@^4
     url: string,
