@@ -3,7 +3,7 @@
   "devDependencies": {
     "typescript": "^3.8.3"
   },
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Common things between front & back",
   "main": "index.ts",
   "repository": "https://github.com/donkey-tech/gaia-site-lib",
