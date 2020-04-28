@@ -12,6 +12,10 @@ export interface GameInfo {
   viewer: {
     // https://unpkg.com/@gaia-project/viewer@^4
     url: string,
+    dependencies: {
+      scripts: string[],
+      stylesheets: string[]
+    },
     // gaiaViewer, launch is window.gaiaViewer.launch
     topLevelVariable: string
   },
