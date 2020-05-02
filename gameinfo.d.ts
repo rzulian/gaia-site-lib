@@ -21,10 +21,10 @@ export interface GameInfo {
   },
   engine: {
     package: {
-      name: String,
-      version: String
+      name: string,
+      version: string
     },
-    entryPoint: String
+    entryPoint: string
   },
   // [{label: "Do not fill planets with faction color", name: 'noFactionFill', type: 'checkbox'}]
   preferences: Array<{
