@@ -19,9 +19,12 @@ export interface GameInfo {
     // gaiaViewer, launch is window.gaiaViewer.launch
     topLevelVariable: string
   },
-  // Todo
   engine: {
-
+    package: {
+      name: String,
+      version: String
+    },
+    entryPoint: String
   },
   // [{label: "Do not fill planets with faction color", name: 'noFactionFill', type: 'checkbox'}]
   preferences: Array<{

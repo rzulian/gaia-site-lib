@@ -3,8 +3,14 @@
   "devDependencies": {
     "typescript": "^3.8.3"
   },
+  "peerDependencies": {
+    "mongoose": ">=4"
+  },
+  "optionalDependencies": {
+    "mongoose": ">=4"
+  },
   "version": "1.2.0",
-  "description": "Common things between front & back",
+  "description": "Shared typedefs & schemas",
   "main": "index.ts",
   "repository": "https://github.com/donkey-tech/gaia-site-lib",
   "author": "coyotte508 <coyotte508@gmail.com>",
