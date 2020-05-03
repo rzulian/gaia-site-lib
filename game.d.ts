@@ -2,6 +2,7 @@ export interface PlayerInfo<T = string> {
   _id: T;
   remainingTime: number;
   score: number;
+  dropped: boolean;
 }
 
 export interface IAbstractGame<T= string, Game = any, GameOptions = any> {

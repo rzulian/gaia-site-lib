@@ -16,7 +16,8 @@ const repr = {
       },
 
       remainingTime: Number,
-      score: Number
+      score: Number,
+      dropped: Boolean
     }],
     default: []
   },
