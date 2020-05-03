@@ -15,7 +15,8 @@ const repr = {
         index: true
       },
 
-      remainingTime: Number
+      remainingTime: Number,
+      score: Number
     }],
     default: []
   },

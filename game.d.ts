@@ -1,6 +1,12 @@
+export interface PlayerInfo<T = string> {
+  _id: T;
+  remainingTime: number;
+  score: number;
+}
+
 export interface IAbstractGame<T= string, Game = any, GameOptions = any> {
   /** Ids of the players in the website */
-  players: Array<{_id: T, remainingTime: number}>;
+  players: PlayerInfo<T>[];
   creator: T;
   currentPlayer: T;
 
