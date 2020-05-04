@@ -6,9 +6,6 @@
   "peerDependencies": {
     "mongoose": ">=4"
   },
-  "optionalDependencies": {
-    "mongoose": ">=4"
-  },
   "version": "1.4.0",
   "description": "Shared typedefs & schemas",
   "main": "index.ts",
