@@ -105,14 +105,7 @@ const repr = {
   },
 };
 
-const schema = new Schema(repr, {timestamps: true, toJSON: {
-  transform: function (doc, ret) {
-    // Mongoose removes empty objects, but we don't like that in the game data!
-    if (ret.data) {
-      ret.data = doc.data;
-    }
-  }
-}});
+const schema = new Schema(repr, {timestamps: true});
 
 schema.index({status: 1, lastMove: -1});
 
