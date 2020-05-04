@@ -15,10 +15,11 @@ const repr = {
         index: true
       },
 
+      name: String,
       remainingTime: Number,
       score: Number,
       dropped: Boolean,
-      faction: String
+      faction: String,
     }],
     default: []
   },

@@ -3,6 +3,7 @@ export interface PlayerInfo<T = string> {
   remainingTime: number;
   score: number;
   dropped: boolean;
+  name: string;
   faction?: string;
 }
 
