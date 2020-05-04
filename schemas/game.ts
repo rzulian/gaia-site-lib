@@ -112,4 +112,6 @@ const schema = new Schema(repr, {timestamps: true, toJSON: {
   }
 }});
 
+schema.index({status: 1, lastMove: -1});
+
 export default schema;
