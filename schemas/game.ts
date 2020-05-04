@@ -38,13 +38,14 @@ const repr = {
     index: true
   },
   data: {},
-  active: {
-    type: Boolean,
-    default: true
+  status: {
+    type: String,
+    enum: ["open", "active", "ended"],
+    default: "open"
   },
-  open: {
+  cancelled: {
     type: Boolean,
-    default: true
+    default: false
   },
   options: {
     setup: {
