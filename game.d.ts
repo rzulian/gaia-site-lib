@@ -3,6 +3,7 @@ export interface PlayerInfo<T = string> {
   remainingTime: number;
   score: number;
   dropped: boolean;
+  faction?: string;
 }
 
 export interface IAbstractGame<T= string, Game = any, GameOptions = any> {
