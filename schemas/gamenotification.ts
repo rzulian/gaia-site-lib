@@ -11,7 +11,7 @@ const repr = {
   },
   kind: {
     type: String,
-    enum: ["currentMove", "gameEnded"]
+    enum: ["currentMove", "gameEnded", "gameStarted"]
   }
 };
 
