@@ -1,10 +1,15 @@
 {
   "name": "@gaia-project/site-lib",
   "devDependencies": {
+    "mongoose": ">=4",
     "typescript": "^3.8.3"
   },
   "peerDependencies": {
     "mongoose": ">=4"
+  },
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "tsc"
   },
   "version": "1.4.2",
   "description": "Shared typedefs & schemas",

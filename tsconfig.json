@@ -7,7 +7,7 @@
     // "declaration": true,                   /* Generates corresponding '.d.ts' file. */
     "sourceMap": true,                     /* Generates corresponding '.map' file. */
     // "outFile": "./",                       /* Concatenate and emit output to single file. */
-    "outDir": "./dist",                        /* Redirect output structure to the directory. */
+    "outDir": "dist",                        /* Redirect output structure to the directory. */
   },
   "types": [
     "node"
