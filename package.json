@@ -16,5 +16,14 @@
   "main": "index.ts",
   "repository": "https://github.com/donkey-tech/gaia-site-lib",
   "author": "coyotte508 <coyotte508@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "files": [
+    "dist",
+    "schemas",
+    "chatmessage.d.ts",
+    "game.d.ts",
+    "gameinfo.d.ts",
+    "gamenotification.d.ts",
+    "page.d.ts"
+  ]
 }
