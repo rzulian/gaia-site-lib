@@ -99,8 +99,6 @@ const repr = {
     expansions: [String],
 
     options: {
-      advancedRules: Boolean,
-      balancedGeneration: Boolean
     }
   },
 };
