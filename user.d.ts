@@ -26,7 +26,10 @@ export interface IAbstractUser {
       ip: string,
       date: Date
     },
+    // Last sign of activity - but can be stuff like automated jwt renewal
     lastActive: Date,
+    // Last actively online (tab active)
+    lastOnline: Date,
     confirmed: boolean,
     confirmKey: string,
     reset: {
