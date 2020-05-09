@@ -105,6 +105,10 @@ const repr = {
 
 const schema = new Schema(repr, {timestamps: true});
 
+// To... order open games & active games & closed games
 schema.index({status: 1, lastMove: -1});
+
+// To check a player's (dropped) games in the last X days
+schema.index({"players._id": 1, lastMove: -1});
 
 export default schema;
