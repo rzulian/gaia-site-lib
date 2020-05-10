@@ -2,7 +2,8 @@ export interface IAbstractUser {
   account: {
     username: string,
     email: string,
-    password: string
+    password: string,
+    karma: number
   };
   settings: {
     mailing: {
