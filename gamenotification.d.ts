@@ -7,5 +7,5 @@ export interface GameNotification<T = string> {
   game: string;
   user: T;
   createAt: Date;
-  kind: "gameEnded" | "currentMove" | "gameStarted";
+  kind: "gameEnded" | "currentMove" | "gameStarted" | "playerDrop";
 }
