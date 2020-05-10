@@ -37,6 +37,7 @@ export interface IAbstractGame<T= string, Game = any, GameOptions = any> {
     },
     meta: {
       unlisted: boolean;
+      minimumKarma: number;
     }
   };
 

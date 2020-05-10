@@ -90,6 +90,7 @@ const repr = {
     },
     meta: {
       unlisted: Boolean,
+      minimumKarma: Number
     }
   },
 
