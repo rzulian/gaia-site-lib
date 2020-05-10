@@ -11,7 +11,7 @@
     "build": "tsc",
     "prepublishOnly": "tsc"
   },
-  "version": "1.5.0",
+  "version": "1.5.1",
   "description": "Shared typedefs & schemas",
   "main": "index.ts",
   "repository": "https://github.com/donkey-tech/gaia-site-lib",
