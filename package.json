@@ -24,6 +24,7 @@
     "game.d.ts",
     "gameinfo.d.ts",
     "gamenotification.d.ts",
+    "gamepreferences.d.ts",
     "page.d.ts",
     "user.d.ts"
   ]
