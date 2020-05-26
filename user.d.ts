@@ -36,7 +36,9 @@ export interface IAbstractUser {
     reset: {
       key: string,
       issued: Date
-    }
+    },
+    // Slug of the username, to guarantee unicity
+    slug: string
   };
   meta: {
     nextGameNotification: Date,
