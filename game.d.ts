@@ -12,7 +12,7 @@ export interface IAbstractGame<T= string, Game = any, GameOptions = any> {
   players: PlayerInfo<T>[];
   creator: T;
 
-  currentPlayer: Array <{
+  currentPlayers: Array <{
     _id: T,
     timerStart: Date,
     deadline: Date

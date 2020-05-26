@@ -27,7 +27,7 @@ const repr = {
     type: Schema.Types.ObjectId,
     index: true
   },
-  currentPlayer: [{
+  currentPlayers: [{
     _id: {
       type: Schema.Types.ObjectId,
       ref: "User",
