@@ -11,9 +11,12 @@ export interface IAbstractGame<T= string, Game = any, GameOptions = any> {
   /** Ids of the players in the website */
   players: PlayerInfo<T>[];
   creator: T;
-  currentPlayer: T;
 
-  nextMoveDeadline: Date;
+  currentPlayer: Array <{
+    _id: T,
+    timerStart: Date,
+    deadline: Date
+  }>;
 
   /** Game data */
   data: Game;
@@ -52,9 +55,9 @@ export interface IAbstractGame<T= string, Game = any, GameOptions = any> {
   status: 'open' | 'active' | 'ended';
   cancelled: boolean;
 
-  lastMove: Date;
   updatedAt: Date;
   createdAt: Date;
+  lastMove: Date;
 }
 
 export interface IGame extends IAbstractGame {

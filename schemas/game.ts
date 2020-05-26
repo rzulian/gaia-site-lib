@@ -27,14 +27,17 @@ const repr = {
     type: Schema.Types.ObjectId,
     index: true
   },
-  currentPlayer: {
-    type: Schema.Types.ObjectId,
-    ref: "User"
-  },
-  nextMoveDeadline: {
-    type: Date,
-    sparse: true
-  },
+  currentPlayer: [{
+    _id: {
+      type: Schema.Types.ObjectId,
+      ref: "User",
+      index: true
+    },
+    deadline: {
+      type: Date,
+      index: true
+    }
+  }],
   lastMove: {
     type: Date,
     index: true
