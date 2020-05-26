@@ -36,7 +36,8 @@ const repr = {
     deadline: {
       type: Date,
       index: true
-    }
+    },
+    timerStart: Date
   }],
   lastMove: {
     type: Date,
