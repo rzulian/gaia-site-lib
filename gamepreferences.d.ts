@@ -16,4 +16,9 @@ export interface GamePreferences<T> {
      */
     maxVersion: number;
   }
+
+  elo: {
+    value: number;
+    games: number;
+  }
 }
