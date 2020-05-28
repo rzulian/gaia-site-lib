@@ -1,6 +1,7 @@
 {
   "name": "@gaia-project/site-lib",
   "devDependencies": {
+    "@types/mongoose": "^5.7.21",
     "mongoose": ">=4",
     "typescript": "^3.8.3"
   },

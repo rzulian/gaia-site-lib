@@ -13,9 +13,16 @@ const repr = {
     type: String,
     enum: ["currentMove", "gameEnded", "gameStarted", "playerDrop"],
     index: true
+  },
+  processed: {
+    type: Boolean,
+    default: false
   }
 };
 
 const schema = new Schema(repr, {timestamps: true});
+
+schema.index({processed: 1, kind: 1});
+schema.index({updatedAt: 1}, {expireAfterSeconds: 3600 * 24 * 30});
 
 export default schema;
