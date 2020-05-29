@@ -1,4 +1,4 @@
-export interface GamePreferences<T> {
+export interface GamePreferences<T = string> {
   user: T;
   game: string;
 
