@@ -17,7 +17,9 @@ export interface GameInfo {
       stylesheets: string[]
     },
     // gaiaViewer, launch is window.gaiaViewer.launch
-    topLevelVariable: string
+    topLevelVariable: string,
+    // Set to true if you want the game iframe to be full width / full height (instead of resizing height based on content)
+    fullScreen: boolean,
   },
   engine: {
     package: {

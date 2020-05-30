@@ -28,7 +28,8 @@ const repr = {
     dependencies: {
       scripts: [String],
       stylesheets: [String]
-    }
+    },
+    fullScreen: Boolean
   },
   engine: {
     package: {
