@@ -21,6 +21,10 @@ export interface IAbstractGame<T= string, Game = any, GameOptions = any> {
   /** Game data */
   data: Game;
 
+  context: {
+    round: number;
+  }
+
   options: {
     setup: {
       seed: string;

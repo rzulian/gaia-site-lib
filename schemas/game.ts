@@ -98,6 +98,10 @@ const repr = {
     }
   },
 
+  context: {
+    round: Number
+  },
+
   game: {
     name: String,
     version: Number,
