@@ -29,7 +29,8 @@ const repr = {
       scripts: [String],
       stylesheets: [String]
     },
-    fullScreen: Boolean
+    fullScreen: Boolean,
+    trusted: Boolean
   },
   engine: {
     package: {
