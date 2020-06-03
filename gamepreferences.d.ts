@@ -2,7 +2,7 @@ export interface GamePreferences<T = string> {
   user: T;
   game: string;
 
-  preferences: {
+  preferences?: {
     [key: string]: any
   }
 
@@ -14,10 +14,10 @@ export interface GamePreferences<T = string> {
     /**
      * Latest version the player can access
      */
-    maxVersion: number;
+    maxVersion?: number;
   }
 
-  elo: {
+  elo?: {
     value: number;
     games: number;
   }
