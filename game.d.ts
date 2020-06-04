@@ -5,6 +5,7 @@ export interface PlayerInfo<T = string> {
   dropped: boolean;
   name: string;
   faction?: string;
+  voteCancel?: boolean;
 }
 
 export interface IAbstractGame<T= string, Game = any, GameOptions = any> {
