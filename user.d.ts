@@ -4,6 +4,7 @@ export interface IAbstractUser {
     email: string,
     password: string,
     karma: number
+    termsAndConditions: Date,
   };
   settings: {
     mailing: {
@@ -43,9 +44,6 @@ export interface IAbstractUser {
   meta: {
     nextGameNotification: Date,
     lastGameNotification: Date,
-    games?: {
-      finished: number
-    }
   };
   authority: string;
 }
