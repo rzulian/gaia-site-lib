@@ -20,7 +20,8 @@ const repr = {
       score: Number,
       dropped: Boolean,
       faction: String,
-      voteCancel: Boolean
+      voteCancel: Boolean,
+      ranking: Number
     }],
     default: []
   },
