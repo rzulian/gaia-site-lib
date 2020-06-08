@@ -21,7 +21,9 @@ const repr = {
       dropped: Boolean,
       faction: String,
       voteCancel: Boolean,
-      ranking: Number
+      ranking: Number,
+      elo: Number,
+      eloChanges: [Number]
     }],
     default: []
   },
