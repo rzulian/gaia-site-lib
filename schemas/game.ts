@@ -22,8 +22,10 @@ const repr = {
       faction: String,
       voteCancel: Boolean,
       ranking: Number,
-      elo: Number,
-      eloChanges: [Number]
+      elo: {
+        initial: Number,
+        delta: Number
+      }
     }],
     default: []
   },
