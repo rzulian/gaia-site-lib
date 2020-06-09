@@ -5,6 +5,11 @@ export interface IAbstractUser {
     password: string,
     karma: number
     termsAndConditions: Date,
+    social: {
+      google: string,
+      facebook: string,
+      discord: string
+    }
   };
   settings: {
     mailing: {
