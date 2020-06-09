@@ -7,6 +7,10 @@ export interface PlayerInfo<T = string> {
   faction?: string;
   voteCancel?: boolean;
   ranking?: number;
+  elo?: {
+    initial?: number;
+    delta?: number;
+  }
 }
 
 export interface IAbstractGame<T= string, Game = any, GameOptions = any> {
