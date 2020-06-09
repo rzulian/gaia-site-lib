@@ -83,6 +83,10 @@ const repr = {
     public: {
       type: Boolean,
       default: false
+    },
+    needOwnership: {
+      type: Boolean,
+      default: true
     }
   }
 };

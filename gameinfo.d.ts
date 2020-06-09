@@ -60,6 +60,7 @@ export interface GameInfo {
   }>,
 
   meta: {
-    public: boolean
+    public: boolean,
+    needOwnership: boolean
   }
 }
