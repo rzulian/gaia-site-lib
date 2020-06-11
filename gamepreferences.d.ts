@@ -1,4 +1,6 @@
 export interface GamePreferences<T = string> {
+  _id: T;
+
   user: T;
   game: string;
 
