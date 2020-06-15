@@ -30,7 +30,8 @@ const repr = {
       stylesheets: [String]
     },
     fullScreen: Boolean,
-    trusted: Boolean
+    trusted: Boolean,
+    replayable: Boolean
   },
   engine: {
     package: {

@@ -29,6 +29,10 @@ export interface GameInfo {
      * a warning instead when we detect the lack of feature!
      */
     trusted: boolean,
+    /**
+     * Does the UI support replays?
+     */
+    replayable: boolean
   },
   engine: {
     package: {
