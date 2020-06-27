@@ -5,7 +5,7 @@ export interface GamePreferences<T = string> {
   game: string;
 
   preferences?: {
-    alternateViewer?: boolean,
+    alternateUI?: boolean,
     [key: string]: any
   }
 
