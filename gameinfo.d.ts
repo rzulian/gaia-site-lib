@@ -1,3 +1,29 @@
+export interface ViewerInfo {
+  // https://unpkg.com/@gaia-project/viewer@^4
+  url: string,
+  dependencies: {
+    scripts: string[],
+    stylesheets: string[]
+  },
+  // gaiaViewer, launch is window.gaiaViewer.launch
+  topLevelVariable: string,
+  /**
+   * Set to true if you want the game iframe to be full width / full height (instead of resizing height based on content)
+   */
+  fullScreen: boolean,
+  /**
+   * Set to true if you implicitly trust the viewer. They will have access to your local storage!
+   *
+   * Can be useful when cross-site fingerprinting protections mess with the game. Or maybe we should find a way to display
+   * a warning instead when we detect the lack of feature!
+   */
+  trusted: boolean,
+  /**
+   * Does the UI support replays?
+   */
+  replayable: boolean
+}
+
 export interface GameInfo {
   _id: {
     game: string,
@@ -9,31 +35,7 @@ export interface GameInfo {
   description: string,
   rules: string,
 
-  viewer: {
-    // https://unpkg.com/@gaia-project/viewer@^4
-    url: string,
-    dependencies: {
-      scripts: string[],
-      stylesheets: string[]
-    },
-    // gaiaViewer, launch is window.gaiaViewer.launch
-    topLevelVariable: string,
-    /**
-     * Set to true if you want the game iframe to be full width / full height (instead of resizing height based on content)
-     */
-    fullScreen: boolean,
-    /**
-     * Set to true if you implicitly trust the viewer. They will have access to your local storage!
-     *
-     * Can be useful when cross-site fingerprinting protections mess with the game. Or maybe we should find a way to display
-     * a warning instead when we detect the lack of feature!
-     */
-    trusted: boolean,
-    /**
-     * Does the UI support replays?
-     */
-    replayable: boolean
-  },
+  viewer: ViewerInfo & {alternate?: ViewerInfo},
   engine: {
     package: {
       name: string,

@@ -31,7 +31,25 @@ const repr = {
     },
     fullScreen: Boolean,
     trusted: Boolean,
-    replayable: Boolean
+    replayable: Boolean,
+
+    alternate: {
+      url: {
+        type: String,
+        required: true
+      },
+      topLevelVariable: {
+        type: String,
+        required: true
+      },
+      dependencies: {
+        scripts: [String],
+        stylesheets: [String]
+      },
+      fullScreen: Boolean,
+      trusted: Boolean,
+      replayable: Boolean,
+    }
   },
   engine: {
     package: {
